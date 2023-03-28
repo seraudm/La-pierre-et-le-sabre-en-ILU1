@@ -18,13 +18,15 @@ public class HistoireTP4 {
 		Commerçant marco = new Commerçant("Marco", 15);
 		marco.direBonjour();
 		
-//		Yakuza yakuLeNoir = new Yakuza("Yaku Le Noir", 30, "whisky", "Warsong");
-//		yakuLeNoir.direBonjour();
-//		yakuLeNoir.extorquerArgent(marco);
+		Yakuza yakuLeNoir = new Yakuza("Yaku Le Noir", 30, "whisky", "Warsong");
+		yakuLeNoir.direBonjour();
+		yakuLeNoir.extorquerArgent(marco);
 		
 		Ronin roro = new Ronin("Roro", 60, "shochu");
 		roro.direBonjour();
 		roro.donner(marco);
+		yakuLeNoir.extorquerArgent(marco);
+		roro.provoquer(yakuLeNoir);
 	}
 
 }
