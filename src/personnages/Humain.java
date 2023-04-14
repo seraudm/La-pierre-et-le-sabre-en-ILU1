@@ -60,7 +60,7 @@ public class Humain {
 		humain.memoriser(this);
 	}
 	
-	private void memoriser(Humain humain) {
+	protected void memoriser(Humain humain) {
 		if (nbConnaissance<this.memoire.length){
 			memoire[nbConnaissance] = humain;
 			nbConnaissance ++;
